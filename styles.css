@@ -1,0 +1,51 @@
+/* Basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+header {
+  background-color: rgb(160, 160, 195);
+  height: 30px; /* Altura del header */
+  text-align: center;
+  flex: 0 0 auto; /* No se estirará, se mantendrá fijo */
+}
+
+main {
+  background-color: white;
+  flex: 1 1 auto; /* Se estirará para ocupar el espacio restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(186, 186, 111);
+  height: 30px;
+  text-align: center;
+  flex: 0 0 auto; 
+}
+
+
+
+@media screen and (min-width: 568px) {
+
+  header,
+  main,
+  footer {
+    height: auto; 
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Portrait styles */
+  header,
+  main,
+  footer {
+    height: auto;
+  }
+}
